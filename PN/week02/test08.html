@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>每個星期不同顏色</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+/* 彩虹顏色：紅 -> 紫 */
+th:nth-child(1), td:nth-child(1) {
+  background-color: #FF0000; /* 紅色 */
+  color: white;
+}
+
+th:nth-child(2), td:nth-child(2) {
+  background-color: #FF7F00; /* 橙色 */
+  color: white;
+}
+
+th:nth-child(3), td:nth-child(3) {
+  background-color: #FFFF00; /* 黃色 */
+  color: black;
+}
+
+th:nth-child(4), td:nth-child(4) {
+  background-color: #00FF00; /* 綠色 */
+  color: black;
+}
+
+th:nth-child(5), td:nth-child(5) {
+  background-color: #0000FF; /* 藍色 */
+  color: white;
+}
+
+th:nth-child(6), td:nth-child(6) {
+  background-color: #4B0082; /* 靛色 */
+  color: white;
+}
+
+th:nth-child(7), td:nth-child(7) {
+  background-color: #9400D3; /* 紫色 */
+  color: white;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h2>Rainbow Striped Table 🌈</h2>
+<p>每一欄都有不同的彩虹顏色：紅、橙、黃、綠、藍、靛、紫</p>
+<table style="width:100%">
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+</table>
+
+<div style="margin-top: 30px; padding: 20px; background-color: #f0f0f0; border-radius: 10px;">
+  <h3>🎨 彩虹顏色代碼</h3>
+  <ul style="line-height: 2;">
+    <li><strong style="color: #FF0000;">第1欄 (MON)</strong> - 紅色：#FF0000</li>
+    <li><strong style="color: #FF7F00;">第2欄 (TUE)</strong> - 橙色：#FF7F00</li>
+    <li><strong style="color: #FFFF00; background-color: #333; padding: 2px 5px;">第3欄 (WED)</strong> - 黃色：#FFFF00</li>
+    <li><strong style="color: #00FF00; background-color: #333; padding: 2px 5px;">第4欄 (THU)</strong> - 綠色：#00FF00</li>
+    <li><strong style="color: #0000FF;">第5欄 (FRI)</strong> - 藍色：#0000FF</li>
+    <li><strong style="color: #4B0082;">第6欄 (SAT)</strong> - 靛色：#4B0082</li>
+    <li><strong style="color: #9400D3;">第7欄 (SUN)</strong> - 紫色：#9400D3</li>
+  </ul>
+</div>
+</body>
+</html>

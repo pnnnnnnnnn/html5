@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每秒換顏色</title>
+</head>
+
+<body>
+    <h1>🎨 換顏色</h1>
+
+    <div class="info">
+        當前顏色：<span class="color-code" id="colorDisplay">#000000</span>
+    </div>
+
+    <script>
+        // 方法 1: 隨機顏色
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // 每秒換一次文字顏色
+        setInterval(function () {
+            const newColor = getRandomColor();
+            document.querySelector('h1').style.color = newColor;  // 改變 h1 文字顏色
+            document.getElementById('colorDisplay').textContent = newColor;
+            document.getElementById('colorDisplay').style.color = newColor;  // 顏色代碼也跟著變
+        }, 1000);  // 1000 毫秒 = 1 秒
+    </script>
+</body>
+
+</html>
