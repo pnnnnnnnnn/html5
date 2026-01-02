@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        /* #male,#female{
+            zoom:3
+        }
+        [type=radio] + label {font-size: 50px ;} */
+        /* #radio_group {
+            zoom: 2
+        }
+        #checkbox_group{
+            zoom: 2
+        } */
+        #group{
+            zoom :2
+        }
+    </style>
+</head>
+
+<body style="background: gray;">
+    <form action="" id="group">
+        <label for="firstname">姓</label>
+        <input type="text" id="firstname" name="firstname" placeholder="輸入姓氏">
+        <br>
+        <label for="lastname">名</label>
+        <input type="text" id="lastname" name="lastname" placeholder="輸入姓名">
+        <br><br>
+
+        <div id="radio_group">
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">男</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">女</label>
+        </div>
+
+        <br><br>
+        <div id="checkbox_group">
+            <p>交通工具</p>
+            <input type="checkbox" id="motorcycle" name="motorcycle" value="motorcycle">
+            <label for="motorcycle">機車</label>
+            <input type="checkbox" id="MRT" name="MRT" value="MRT">
+            <label for="MRT">捷運</label>
+            <input type="checkbox" id="train" name="train" value="train">
+            <label for="train">火車</label>
+            <br><br>
+            <input type="submit" value="傳送資料">
+
+        </div>
+    </form>
+</body>
+
+</html>
