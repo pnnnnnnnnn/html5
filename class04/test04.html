@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>type</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="testlength">測試文字長度(最大10)</label>
+        <input type="text" maxlength="10" id="testlength"><br>
+        <label for="email">測試email</label>
+        <input type="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" id="email" required><br>
+        <input type="range" id="vol" name="vol" min="0" max="50"><br>
+        <input type="submit" value="送出">
+    </form>
+</body>
+
+</html>

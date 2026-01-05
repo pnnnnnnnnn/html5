@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video button</title>
+</head>
+
+<body>
+    <button onclick="Play_Paused()">播放/暫停</button>
+    <button onclick="makebig()">變大</button>
+    <button onclick="makesmall()">變小</button>
+    <button onclick="reset()">會復原本大小</button>
+    <p></p>
+    <video width="320" height="240" controls id="video01">
+        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+        <source src="https://www.w3schools.com/html/movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+
+    <script>
+        function Play_Paused() {
+            if (video01.paused)
+                video01.play();
+            else
+                video01.pause();
+        }
+        function makebig() {
+            video01.width = 500;
+        }
+        function makesmall() {
+            video01.width = 200;
+        }
+        function reset() {
+            video01.width = 320;
+        }
+    </script>
+</body>
+
+</html>

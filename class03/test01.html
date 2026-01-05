@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+</head>
+
+<body>
+    <input type="button" value="按鈕01">
+    <button type="button">按鈕02</button>
+    <input type="submit" value="Submit按鈕01">
+    <button type="submit">Submit按鈕02</button>
+    <input type="reset" value="Reset按鈕01">
+    <button type="reset" id="changcolor">Reset按鈕02</button>
+    <script>
+
+        /*      document.getElementById("changcolor").style.color = "blue";
+                document.getElementById("changcolor").style.background = "red";
+                document.getElementById("changcolor").style.width = "200px";
+                document.getElementById("changcolor").style.height = "100px";
+                document.getElementById("changcolor").style.fontSize = "20px";
+         */
+            with(document.getElementById("changcolor").style)
+            {
+                color = "blue";
+                background = "red";
+                width = "200px";
+                height = "100px";
+                fontSize = "20px";
+            }
+            
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>color</title>
+</head>
+<body>
+
+    <h2 id="title">Show a Color Picker</h2>
+
+    <p>The <strong>input type="color"</strong> is used for input fields that should contain a color.</p>
+
+    <form action="/action_page.php">
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000" onchange="changeColor()">
+        <input type="submit" value="Submit">
+    </form>
+
+    <p><b>Note:</b> type="color" is not supported in Internet Explorer 11.</p>
+
+    <script>
+        function changeColor() {
+            var color = document.getElementById('favcolor').value;
+            document.getElementById('title').style.color = color;
+            alert(color);
+        }
+    </script>
+
+</body>
+</html>
