@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 超連結背景顏色</title>
+    <style>
+        a[target=_blank] {
+            background-color: yellow;
+        }
+        /* #chang_color:hover{
+            background-color: forestgreen;
+        } */
+         a[title]:hover
+         {
+            background-color: forestgreen;
+         }
+    </style>
+</head>
+
+<body>
+    <h2>CSS [attribute="value"] Selector</h2>
+
+    <p>Select and style the links with a target="_blank" attribute:</p>
+
+    <a href="https://www.w3schools.com" target="_blank">W3schools.com</a>
+    <a href="https://www.w3schools.com/css/" title="CSS_test" id="chang_color">CSS</a>
+    <a href="https://www.w3schools.com/html/" target="_top">HTML</a>
+
+</body>
+
+</html>
